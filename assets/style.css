@@ -2,15 +2,20 @@
 
 body {
   background: #021a54;
+  background-image: url("./Component.d1224bcb.svg");
+  background-size: 600px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
 }
 
 .puzzleWrap {
-  width: 100%;
+  width: 900px;
   margin: 50px auto 0;
 }
 
 .headerLogo {
-  width: 100%;
+  width: 900px;
   background-color: #febf3c;
   border-radius: 20px;
   padding: 10px;
@@ -19,7 +24,6 @@ body {
 }
 
 .headerLogo span {
-  display: none;
   position: absolute;
   right: 220px;
   top: 75px;
@@ -48,7 +52,7 @@ p {
   padding: 20px;
   float: left;
   margin: 30px 20px;
-  width: 100%;
+  width: 500px;
 }
 
 #puzzle div {
@@ -58,8 +62,8 @@ p {
 
 /* style for each square in the puzzle */
 #puzzle .puzzleSquare {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   text-transform: uppercase;
   background-color: #021a54;
   border: 0;
@@ -104,10 +108,9 @@ button::-moz-focus-inner {
 * Styles for the word list
 */
 #words {
-  display: block;
   background-color: rgba(240, 248, 255, 0.76);
   border-radius: 20px;
-  width: 450px;
+  width: 250px;
   color: #6891ad;
   float: left;
   margin-top: 37px;
@@ -191,112 +194,304 @@ button::-moz-focus-inner {
   outline: 0px;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  body {
-    background-image: url("./Component.d1224bcb.svg");
-    background-size: 600px;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-blend-mode: screen;
-  }
 
-  .puzzleWrap {
-    width: 900px;
-    margin: 50px auto 0;
-  }
+/*body {*/
+/*  background: #021a54;*/
+/*}*/
 
-  .headerLogo {
-    width: 900px;
-  }
+/*.puzzleWrap {*/
+/*  width: 100%;*/
+/*  margin: 50px auto 0;*/
+/*}*/
 
-  .headerLogo span {
-    display: inline;
-  }
+/*.headerLogo {*/
+/*  width: 100%;*/
+/*  background-color: #febf3c;*/
+/*  border-radius: 20px;*/
+/*  padding: 10px;*/
+/*  !*display: inline;*!*/
+/*  !*margin: 50px;*!*/
+/*}*/
 
-  .headerLogo span a {
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
+/*.headerLogo span {*/
+/*  display: none;*/
+/*  position: absolute;*/
+/*  right: 220px;*/
+/*  top: 75px;*/
+/*}*/
 
-  /**
-  * Styles for the puzzle
-  */
-  #puzzle {
-    background-color: #021a54;
-    border: 2px solid rgba(108, 122, 248, 0.58);
-    border-radius: 10px;
-    padding: 20px;
-    float: left;
-    margin: 30px 20px;
-    width: 500px;
-  }
+/*.headerLogo span a {*/
+/*  margin-right: 20px;*/
+/*  margin-bottom: 20px;*/
+/*}*/
 
-  #puzzle div {
-    width: 100%;
-    margin: 0 auto;
-  }
 
-  /* style for each square in the puzzle */
-  #puzzle .puzzleSquare {
-    height: 25px;
-    width: 25px;
-    text-transform: uppercase;
-    background-color: #021a54;
-    border: 0;
-    outline: none;
-    font: 1em sans-serif;
-    color: #6891ad;
-  }
 
-  button::-moz-focus-inner {
-    border: none;
-    outline: none;
-  }
+/*p {*/
+/*  font: 14pt sans-serif;*/
+/*  margin: 10px 10px 0px 10px;*/
+/*  color: #6891ad;*/
+/*}*/
 
-  /* indicates when a square has been selected */
-  #puzzle .selected {
-    color: #ee5426;
-    background-color: #c4c4c4;
-    border-radius: 4px;
-    outline: none;
-  }
-  #puzzle .selected:focus {
-    border: none;
-  }
+/*!***/
+/** Styles for the puzzle*/
+/**!*/
+/*#puzzle {*/
+/*  background-color: #021a54;*/
+/*  border: 2px solid rgba(108, 122, 248, 0.58);*/
+/*  border-radius: 10px;*/
+/*  padding: 20px;*/
+/*  float: left;*/
+/*  margin: 30px 20px;*/
+/*  width: 100%;*/
+/*}*/
 
-  /**
-  * Styles for the word list
-  */
-  #words {
-    background-color: rgba(240, 248, 255, 0.76);
-    border-radius: 20px;
-    width: 250px;
-    color: #6891ad;
-    float: left;
-    margin-top: 37px;
-  }
+/*#puzzle div {*/
+/*  width: 100%;*/
+/*  margin: 0 auto;*/
+/*}*/
 
-  #words h6 {
-    color: #050505;
-    text-align: center;
-  }
+/*!* style for each square in the puzzle *!*/
+/*#puzzle .puzzleSquare {*/
+/*  height: 20px;*/
+/*  width: 20px;*/
+/*  text-transform: uppercase;*/
+/*  background-color: #021a54;*/
+/*  border: 0;*/
+/*  outline: none;*/
+/*  font: 1em sans-serif;*/
+/*  color: #6891ad;*/
+/*}*/
 
-  #words ul {
-    list-style-type: none;
-  }
+/*button::-moz-focus-inner {*/
+/*  border: none;*/
+/*  outline: none;*/
+/*}*/
 
-  #words li {
-    padding: 0 0 7px;
-    font: 1em sans-serif;
-    display: inline-block;
-    float: left;
-    width: 100px;
-  }
+/*!* indicates when a square has been selected *!*/
+/*#puzzle .selected {*/
+/*  color: #ee5426;*/
+/*  background-color: #c4c4c4;*/
+/*  border-radius: 4px;*/
+/*  outline: none;*/
+/*}*/
+/*#puzzle .selected:focus {*/
+/*  border: none;*/
+/*}*/
 
-  /* indicates that the word has been found */
-  #words .wordFound {
-    text-decoration: line-through;
-    color: #ee5426;
-  }
-}
+/*!* indicates that the square is part of a word that has been found *!*/
+/*#puzzle .found {*/
+/*  color: #ee5426;*/
+/*  background-color: #c4c4c4;*/
+/*  border-radius: 4px;*/
+/*}*/
+
+/*#puzzle .solved {*/
+/*  color: #ee5426;*/
+/*}*/
+
+/*!* indicates that all words have been found *!*/
+/*#puzzle .complete {*/
+/*  background-color: green;*/
+/*}*/
+
+/*!***/
+/** Styles for the word list*/
+/**!*/
+/*#words {*/
+/*  display: block;*/
+/*  background-color: rgba(240, 248, 255, 0.76);*/
+/*  border-radius: 20px;*/
+/*  width: 450px;*/
+/*  color: #6891ad;*/
+/*  float: left;*/
+/*  margin-top: 37px;*/
+/*}*/
+
+/*#words h6 {*/
+/*  color: #050505;*/
+/*  text-align: center;*/
+/*}*/
+
+/*#words ul {*/
+/*  list-style-type: none;*/
+/*}*/
+
+/*#words li {*/
+/*  padding: 0 0 7px;*/
+/*  font: 1em sans-serif;*/
+/*  display: inline-block;*/
+/*  float: left;*/
+/*  width: 100px;*/
+/*}*/
+
+/*!* indicates that the word has been found *!*/
+/*#words .wordFound {*/
+/*  text-decoration: line-through;*/
+/*  color: #ee5426;*/
+/*}*/
+
+/*!***/
+/** Styles for the button*/
+/**!*/
+/*#solve {*/
+/*  margin: 30px 30px 0 40px;*/
+/*  background: transparent;*/
+/*  color: #ee5426;*/
+/*  padding: 10px 20px;*/
+/*  border: 2px solid #ee5426;*/
+/*  border-radius: 25px;*/
+/*  opacity: 0.5;*/
+/*  transition: opacity 0.25s ease-in;*/
+/*}*/
+/*#solve:hover, #solve.gameSolved {*/
+/*  opacity: 1;*/
+/*}*/
+
+/*.errorSpan {*/
+/*  display: block;*/
+/*  color: red;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.loginButton {*/
+/*  display: inline-flex;*/
+/*  justify-self: center;*/
+/*  font-size: 18px;*/
+/*  font-weight: 900;*/
+/*  letter-spacing: 2px;*/
+/*  color: rgb(2, 26, 84);*/
+/*  background-color: rgb(254, 191, 60);*/
+/*  cursor: pointer;*/
+/*  padding: 5px 20px;*/
+/*  border-radius: 100px;*/
+/*  transition: all 0.3s ease 0s;*/
+/*  border-width: 0px;*/
+/*  border-style: initial;*/
+/*  border-color: initial;*/
+/*  border-image: initial;*/
+/*  margin-top: 10px;*/
+/*}*/
+
+/*#loginInput {*/
+/*  width: 95%;*/
+/*  display: block;*/
+/*  font-size: 18px;*/
+/*  padding: 10px;*/
+/*  border-width: 2px;*/
+/*  border-style: solid;*/
+/*  border-color: rgba(2, 26, 84, 0.73);*/
+/*  border-image: initial;*/
+/*  border-radius: 0px;*/
+/*  outline: 0px;*/
+/*}*/
+
+/*@media only screen and (min-width: 768px) {*/
+/*  !* For desktop: *!*/
+/*  body {*/
+/*    background-image: url("./Component.d1224bcb.svg");*/
+/*    background-size: 600px;*/
+/*    background-position: bottom right;*/
+/*    background-repeat: no-repeat;*/
+/*    background-blend-mode: screen;*/
+/*  }*/
+
+/*  .puzzleWrap {*/
+/*    width: 900px;*/
+/*    margin: 50px auto 0;*/
+/*  }*/
+
+/*  .headerLogo {*/
+/*    width: 900px;*/
+/*  }*/
+
+/*  .headerLogo span {*/
+/*    display: inline;*/
+/*  }*/
+
+/*  .headerLogo span a {*/
+/*    margin-right: 20px;*/
+/*    margin-bottom: 20px;*/
+/*  }*/
+
+/*  !***/
+/*  * Styles for the puzzle*/
+/*  *!*/
+/*  #puzzle {*/
+/*    background-color: #021a54;*/
+/*    border: 2px solid rgba(108, 122, 248, 0.58);*/
+/*    border-radius: 10px;*/
+/*    padding: 20px;*/
+/*    float: left;*/
+/*    margin: 30px 20px;*/
+/*    width: 500px;*/
+/*  }*/
+
+/*  #puzzle div {*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*  }*/
+
+/*  !* style for each square in the puzzle *!*/
+/*  #puzzle .puzzleSquare {*/
+/*    height: 25px;*/
+/*    width: 25px;*/
+/*    text-transform: uppercase;*/
+/*    background-color: #021a54;*/
+/*    border: 0;*/
+/*    outline: none;*/
+/*    font: 1em sans-serif;*/
+/*    color: #6891ad;*/
+/*  }*/
+
+/*  button::-moz-focus-inner {*/
+/*    border: none;*/
+/*    outline: none;*/
+/*  }*/
+
+/*  !* indicates when a square has been selected *!*/
+/*  #puzzle .selected {*/
+/*    color: #ee5426;*/
+/*    background-color: #c4c4c4;*/
+/*    border-radius: 4px;*/
+/*    outline: none;*/
+/*  }*/
+/*  #puzzle .selected:focus {*/
+/*    border: none;*/
+/*  }*/
+
+/*  !***/
+/*  * Styles for the word list*/
+/*  *!*/
+/*  #words {*/
+/*    background-color: rgba(240, 248, 255, 0.76);*/
+/*    border-radius: 20px;*/
+/*    width: 250px;*/
+/*    color: #6891ad;*/
+/*    float: left;*/
+/*    margin-top: 37px;*/
+/*  }*/
+
+/*  #words h6 {*/
+/*    color: #050505;*/
+/*    text-align: center;*/
+/*  }*/
+
+/*  #words ul {*/
+/*    list-style-type: none;*/
+/*  }*/
+
+/*  #words li {*/
+/*    padding: 0 0 7px;*/
+/*    font: 1em sans-serif;*/
+/*    display: inline-block;*/
+/*    float: left;*/
+/*    width: 100px;*/
+/*  }*/
+
+/*  !* indicates that the word has been found *!*/
+/*  #words .wordFound {*/
+/*    text-decoration: line-through;*/
+/*    color: #ee5426;*/
+/*  }*/
+/*}*/
