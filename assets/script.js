@@ -847,7 +847,6 @@ $(function () {
     input.classList.add = 'loginInput';
     input.setAttribute('id', 'loginInput');
 
-
     const button = document.createElement('button');
     button.type = 'button';
     button.classList.add('loginButton');
