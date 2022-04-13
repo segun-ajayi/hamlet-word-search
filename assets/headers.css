@@ -45,14 +45,14 @@ body {
   outline: 0;
 }
 
-#puzzle {
-  background-color: #021a54;
-  border: 2px solid rgba(108, 122, 248, 0.58);
-  border-radius: 10px;
-  /*padding: 5px;*/
-  /*float: left;*/
-  /*width: 500px;*/
-}
+/*#puzzle {*/
+/*  background-color: #021a54;*/
+/*  border: 2px solid rgba(108, 122, 248, 0.58);*/
+/*  border-radius: 10px;*/
+/*  !*padding: 5px;*!*/
+/*  !*float: left;*!*/
+/*  !*width: 500px;*!*/
+/*}*/
 
 #puzzle div {
   margin: 0 auto;
@@ -121,7 +121,7 @@ body {
   padding: 0 0 4px;
   font: 1em sans-serif;
   display: block;
-  /*float: left;*/
+  float: left;
   width: 100px;
 }
 
