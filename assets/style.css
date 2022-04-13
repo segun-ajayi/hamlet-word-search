@@ -9,31 +9,18 @@ body {
   background-blend-mode: screen;
 }
 
-.puzzleWrap {
-  width: 900px;
-  margin: 50px auto 0;
-}
-
 .headerLogo {
-  width: 900px;
   background-color: #febf3c;
   border-radius: 20px;
-  padding: 10px;
+  /*padding: 10px;*/
   /*display: inline;*/
   /*margin: 50px;*/
 }
 
-.headerLogo span {
-  position: absolute;
-  right: 220px;
-  top: 75px;
-}
-
-.headerLogo span a {
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
+/*.headerLogo span a {*/
+/*  margin-right: 20px;*/
+/*  margin-bottom: 20px;*/
+/*}*/
 
 
 p {
@@ -49,27 +36,33 @@ p {
   background-color: #021a54;
   border: 2px solid rgba(108, 122, 248, 0.58);
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px;
   float: left;
-  margin: 30px 20px;
   width: 500px;
 }
 
 #puzzle div {
-  width: 100%;
   margin: 0 auto;
 }
 
 /* style for each square in the puzzle */
 #puzzle .puzzleSquare {
-  height: 25px;
-  width: 25px;
+  height: 18px;
+  width: 18px;
   text-transform: uppercase;
   background-color: #021a54;
   border: 0;
   outline: none;
-  font: 1em sans-serif;
+  font: 14px sans-serif;
   color: #6891ad;
+}
+
+@media only screen and (min-width: 768px) {
+  #puzzle .puzzleSquare {
+    height: 40px;
+    width: 40px;
+    font: 1rem sans-serif;
+  }
 }
 
 button::-moz-focus-inner {
@@ -126,10 +119,10 @@ button::-moz-focus-inner {
 }
 
 #words li {
-  padding: 0 0 7px;
+  padding: 0 0 4px;
   font: 1em sans-serif;
-  display: inline-block;
-  float: left;
+  display: block;
+  /*float: left;*/
   width: 100px;
 }
 
@@ -164,7 +157,6 @@ button::-moz-focus-inner {
 
 .loginButton {
   display: inline-flex;
-  justify-self: center;
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 2px;
@@ -182,7 +174,7 @@ button::-moz-focus-inner {
 }
 
 #loginInput {
-  width: 95%;
+  width: 100%;
   display: block;
   font-size: 18px;
   padding: 10px;

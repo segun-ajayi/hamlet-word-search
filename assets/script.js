@@ -478,7 +478,7 @@
       for (var i = 0, height = puzzle.length; i < height; i++) {
         // append a div to represent a row in the puzzle
         var row = puzzle[i];
-        output += '<div>';
+        output += '<div class="w-100">';
         // for each element in that row
         for (var j = 0, width = row.length; j < width; j++) {
             // append our button with the appropriate class
@@ -784,10 +784,8 @@
 }(document, jQuery, wordfind));
 
 $(function () {
-  const start = (e = null) => {
-    if (e) {
-      e.preventDefault();
-    }
+  const start = () => {
+    const db = 'https://hamlet-word-search-default-rtdb.firebaseio.com';
     var words = ['Akanbi', 'Waraosin', 'MogajiAre', 'Maya', 'OkoErin', 'Malete',
       'BalogunGambari', 'OjuEkun', 'Babadudu', 'Ogidi', 'Oloje', 'Apado', 'Badari',
       'BalogunFulani', 'Iponrin', 'Shao', 'Adewole', 'Okeoyi', 'Agbeyangi', 'Baboko',
@@ -797,7 +795,7 @@ $(function () {
     const wordsDiv = document.querySelector('#words');
     const h6 = document.createElement('h6');
     const h62 = document.createElement('h6');
-    h6.textContent = 'LGAs in Puzzle';
+    h6.textContent = 'Words in Puzzle';
     h62.setAttribute('id', 'score');
 
     wordsDiv.appendChild(h6);
@@ -844,12 +842,14 @@ $(function () {
     const input = document.createElement('input');
     input.placeholder = 'Enter Hamlet Code';
     input.type = 'number';
-    input.classList.add = 'loginInput';
+    input.classList.add('loginInput');
+    input.classList.add('w-full');
     input.setAttribute('id', 'loginInput');
 
     const button = document.createElement('button');
     button.type = 'button';
     button.classList.add('loginButton');
+    button.classList.add('m-auto');
     button.textContent = 'login';
     button.addEventListener('click', login)
     div.appendChild(input);
