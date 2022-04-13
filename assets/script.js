@@ -806,8 +806,8 @@ $(function () {
         words,
         '#puzzle',
         '#words',
-        { height: 20,
-          width:20,
+        { height:15,
+          width:15,
           fillBlanks: true
         });
   }
